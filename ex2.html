@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Grievance Submission</title>
+</head>
+<body>
+
+    <h1>Public Grievance Submission Form</h1>
+
+    <form action="/submit-grievance" method="post">
+        <p>
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required placeholder="e.g., John Doe">
+        </p>
+
+        <p>
+            <label for="email">Your Email (Optional):</label><br>
+            <input type="email" id="email" name="email" placeholder="e.g., your.email@example.com">
+        </p>
+
+        <p>
+            <label for="phone">Your Phone Number (Optional):</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890">
+        </p>
+
+        <p>
+            <label for="grievance_type">Type of Grievance:</label><br>
+            <select id="grievance_type" name="grievance_type">
+                <option value="infrastructure">Infrastructure</option>
+                <option value="public_services">Public Services</option>
+                <option value="corruption">Corruption</option>
+                <option value="environment">Environment</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="grievance_details">Grievance Details:</label><br>
+            <textarea id="grievance_details" name="grievance_details" rows="5" cols="40" required placeholder="Describe your grievance here..."></textarea>
+        </p>
+
+        <p>
+            <label for="location">Location of Incident (Optional):</label><br>
+            <input type="text" id="location" name="location" placeholder="e.g., Street name, City">
+        </p>
+
+        <p>
+            <label for="date_incident">Date of Incident (Optional):</label><br>
+            <input type="date" id="date_incident" name="date_incident">
+        </p>
+
+        <p>
+            <input type="submit" value="Submit Grievance">
+        </p>
+    </form>
+
+</body>
+</html>
